@@ -1,0 +1,17 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/hei</item>-->
+        <!--<item name="colorPrimaryDark">@color/hei</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!--<style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowBackground">@color/backgroundTransparent</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    <!--</style>-->
+
+</resources>

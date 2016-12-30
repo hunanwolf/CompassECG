@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dianj"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/take_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="20sp"
+        android:text="还没登录，快去登录吧！"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/huian"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/upload_from_local"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/dianj"
+            android:text="取消"
+
+            />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/huian"/>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/pic_cancel"
+            android:textSize="18sp"
+            android:text="确定"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/dianj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

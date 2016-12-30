@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.compassecg.test720.compassecg"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+    //    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta3'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile project(':AuxiliaryLibarary')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile 'com.android.support:design:23.4.0'
+    //个性化Log
+    compile 'com.orhanobut:logger:1.15'
+    //图片缩放
+    compile 'com.bm.photoview:library:1.4.1'
+}
